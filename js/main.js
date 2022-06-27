@@ -186,7 +186,6 @@ function getMovies(url) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data.results);
       if (data.results.length !== 0) {
         showMovies(data.results);
 
