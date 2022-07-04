@@ -190,13 +190,9 @@ function getMovies(url) {
         showMovies(data.results);
 
         currentPage = data.page;
-
         nextPage = currentPage + 1;
-
         prevPage = currentPage - 1;
-
         totalPages = data.total_pages;
-
         current.innerText = currentPage;
 
         if (currentPage <= 1) {
